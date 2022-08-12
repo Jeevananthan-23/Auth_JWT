@@ -1,7 +1,9 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 namespace Auth_JWT.Model
 {
-    public class UserResponse
+ 
+
+public class UserResponse
     {
         public UserResponse(User user)
         {
@@ -27,4 +29,7 @@ namespace Auth_JWT.Model
         [JsonProperty("info")]
         public User User { get; set; }
     }
+
+
 }
+

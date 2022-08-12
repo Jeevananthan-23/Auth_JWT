@@ -1,8 +1,9 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
-
+using MongoDB.Bson.Serialization.Attributes;
 namespace Auth_JWT.Model
 {
-    public class Session
+
+
+ public class Session
     {
         [BsonElement("user_id")]
         public string UserId { get; set; }

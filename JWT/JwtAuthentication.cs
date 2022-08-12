@@ -1,11 +1,11 @@
-﻿using Auth_JWT.Model;
+using Auth_JWT.Model;
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
 
-
 namespace Auth_JWT.JWT
+
 {
     public class JwtAuthentication
     {
@@ -35,3 +35,6 @@ namespace Auth_JWT.JWT
 
     }
 }
+
+
+

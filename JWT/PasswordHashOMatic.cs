@@ -1,7 +1,8 @@
-﻿using System;
+using System;
 using System.Security.Cryptography;
 
 namespace Auth_JWT.JWT
+
 {
     public static class PasswordHashOMatic
     {
@@ -42,8 +43,6 @@ namespace Auth_JWT.JWT
             }
 
             return true;
-
-        }
 
     }
 }

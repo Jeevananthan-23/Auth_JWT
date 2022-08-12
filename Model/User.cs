@@ -1,4 +1,4 @@
-﻿using MongoDB.Bson;
+using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using Newtonsoft.Json;
 
@@ -6,7 +6,6 @@ namespace Auth_JWT.Model
 {
     public class User
     {
-
         [BsonElement("_id")]
         [JsonProperty("_id")]
         [BsonId]
@@ -26,7 +25,6 @@ namespace Auth_JWT.Model
         [JsonIgnore]
         public string HashedPassword { get; set; }
 
-        public bool IsAdmin { get; set; }
     }
 }
 
