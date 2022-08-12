@@ -1,5 +1,4 @@
-﻿
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 namespace Auth_JWT.Model
 {
  

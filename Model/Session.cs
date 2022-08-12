@@ -1,4 +1,4 @@
-﻿using MongoDB.Bson.Serialization.Attribut
+using MongoDB.Bson.Serialization.Attributes;
 namespace Auth_JWT.Model
 {
 

@@ -1,4 +1,3 @@
-﻿
 using System;
 using System.Security.Cryptography;
 
@@ -15,7 +14,6 @@ namespace Auth_JWT.JWT
         {
             byte[] salt;
             new RNGCryptoServiceProvider().GetBytes(salt = new byte[SaltSize]);
-
             var pbkdf2 = new Rfc2898DeriveBytes(password, salt, Iterations);
             var hash = pbkdf2.GetBytes(HashSize);
 
@@ -45,6 +43,6 @@ namespace Auth_JWT.JWT
             }
 
             return true;
-        }
+
     }
 }

@@ -1,8 +1,7 @@
-﻿
+using Auth_JWT.Model;
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using M220N.Models;
 using Microsoft.IdentityModel.Tokens;
 
 namespace Auth_JWT.JWT
@@ -26,12 +25,14 @@ namespace Auth_JWT.JWT
                 {
                     new Claim(JwtRegisteredClaimNames.Email, user.Email),
                 },
+
                 expires: DateTime.UtcNow.AddDays(30),
                 notBefore: DateTime.UtcNow,
                 signingCredentials: this.SigningCredentials);
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
     }
 }
 
